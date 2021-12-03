@@ -1,8 +1,30 @@
 # Data Analysis in Base Python - Introduction
 
-## Introduction
-
 In this section, you'll continue solidifying your knowledge of Python programming, descriptive statistics, and data visualization by performing key data analysis tasks. You will learn how to load data from CSV and JSON files into Python objects in memory, and wrap up with an analysis that joins together two datasets.
+
+## Lesson Priorities
+### 1st Priority
+
+If you are short on time, be sure to make it through these items:
+- File Input and Output in Python
+- CSV
+- JSON
+- Data Serialization Formats - Cumulative Lab
+> Note: If you can't yet see the cumulative lab, don't worry.  It may not be visible until a pair programming session led by your instructor.
+
+### 2nd Priority
+- JSON - Lab: 
+>Good additional practice with key/value pairs, accessing a list by index values, and for loops.
+- Working with Known JSON Schemas
+- Working with Known JSON Schemas - Lab
+
+### Appendix
+
+Once you are familiar with file input/output in Python, CSV's, and JSONs, move on to the appendix.  
+
+In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lesson/lab pair.  
+
+You will also find a lesson/lab pair that goes into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
 
 ## Base Python
 
