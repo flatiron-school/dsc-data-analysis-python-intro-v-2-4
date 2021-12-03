@@ -22,9 +22,9 @@ If you are short on time, be sure to make it through these items:
 
 Once you are familiar with file input/output in Python, CSV's, and JSONs, move on to the appendix.  
 
-In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lesson/lab pair.  
+In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lessons.  
 
-You will also find a lesson/lab pair that goes into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
+You will also find lessons that go into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
 
 ## Base Python
 
