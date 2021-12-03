@@ -1,6 +1,5 @@
 # Data Analysis in Base Python - Introduction
 
-<<<<<<< HEAD
 In this section, you'll continue solidifying your knowledge of Python programming, descriptive statistics, and data visualization by performing key data analysis tasks. You will learn how to load data from CSV and JSON files into Python objects in memory, and wrap up with an analysis that joins together two datasets.
 
 ## Lesson Priorities
@@ -26,11 +25,6 @@ Once you are familiar with file input/output in Python, CSV's, and JSONs, move o
 In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lesson/lab pair.  
 
 You will also find a lesson/lab pair that goes into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
-=======
-## Introduction
-
-In this section, you'll continue solidifying your knowledge of Python programming, descriptive statistics, and data visualization by performing key data analysis tasks. You will learn how to load data from CSV and JSON files into Python objects in memory, and wrap up with an analysis that joins together two datasets.
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 
 ## Base Python
 
@@ -59,16 +53,6 @@ info_table = [
 type(info_table)
 ```
 
-<<<<<<< HEAD
-=======
-
-
-
-    list
-
-
-
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 Then if we wanted to print out all of the values associated with the `color` keys, the logic would look something like this:
 
 
@@ -77,14 +61,6 @@ for row in info_table:
     print(row["color"])
 ```
 
-<<<<<<< HEAD
-=======
-    green
-    red
-    orange
-
-
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 In later sections of this course, that same task (printing the list of colors) might look something like this, using the `pandas` library:
 
 
@@ -95,29 +71,10 @@ type(df)
 ```
 
 
-<<<<<<< HEAD
-=======
-
-
-    pandas.core.frame.DataFrame
-
-
-
-
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 ```python
 print(df["color"])
 ```
 
-<<<<<<< HEAD
-=======
-    0     green
-    1       red
-    2    orange
-    Name: color, dtype: object
-
-
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 In the base Python example, we had a variable `info_table` which was type `list` (a built-in Python type), whereas in the pandas example, we had a variable `df` which was type `pandas.core.frame.DataFrame` (a custom type from the pandas library).
 
 Then to print out the colors, in the base Python example we had a `for` loop and then code to extract the information from each individual dictionary. The string values got printed out without any additional markup. Then in the pandas example we did not have to use a loop (hint: this is *broadcasting* like we saw previously with NumPy) and also we had some extra markup where it printed out the index values as well as `Name: color, dtype: object`.
@@ -170,15 +127,6 @@ with open("data/apple_orchard.csv") as f:
     print("Minimum apple tree yield:", min(apple_tree_yields))
 ```
 
-<<<<<<< HEAD
-=======
-    Total apple tree yields: 5000
-    Average apple tree yield: 42.40762385776258
-    Maximum apple tree yield: 65.54817042071103
-    Minimum apple tree yield: 21.93121221285836
-
-
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 ### JSON Files
 
 The second major file type we will explore is JSON (JavaScript object notation). For example, this code loads a dataset of interactions between Twitter users, where each user is represented as a "node" and when one tweets at another that connection is represented as a "link".
@@ -243,26 +191,6 @@ with open("data/twitter_graph.json") as f:
     print_top_5(targets)
 ```
 
-<<<<<<< HEAD
-=======
-    There are 99 users in this dataset
-    
-    Top 5 Sources:
-    User 232762581	| 23 Tweets
-    User 49076695	| 20 Tweets
-    User 523173553	| 19 Tweets
-    User 24883888	| 17 Tweets
-    User 53318310	| 16 Tweets
-    
-    Top 5 Targets:
-    User 169686021	| 13 Tweets
-    User 23642374	| 12 Tweets
-    User 25797630	| 11 Tweets
-    User 25626212	| 11 Tweets
-    User 21648607	| 10 Tweets
-
-
->>>>>>> 517a80651cf2570a643503e8dc687053a9807ca2
 ## What About NumPy and Matplotlib?
 
 You can continue using NumPy and Matplotlib as you see fit. For example, if you want to convert a base Python list into a NumPy array because it will help you perform some descriptive analysis task, that is not an issue. You will also need to use Matplotlib in the lessons ahead to create the required visualizations.
