@@ -18,13 +18,7 @@ If you are short on time, be sure to make it through these items:
 - Working with Known JSON Schemas
 - Working with Known JSON Schemas - Lab
 
-### Appendix
 
-Once you are familiar with file input/output in Python, CSV's, and JSONs, move on to the appendix.  
-
-In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lessons.  
-
-You will also find lessons that go into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
 
 ## Base Python
 
@@ -53,6 +47,13 @@ info_table = [
 type(info_table)
 ```
 
+
+
+
+    list
+
+
+
 Then if we wanted to print out all of the values associated with the `color` keys, the logic would look something like this:
 
 
@@ -60,6 +61,11 @@ Then if we wanted to print out all of the values associated with the `color` key
 for row in info_table:
     print(row["color"])
 ```
+
+    green
+    red
+    orange
+
 
 In later sections of this course, that same task (printing the list of colors) might look something like this, using the `pandas` library:
 
@@ -71,9 +77,22 @@ type(df)
 ```
 
 
+
+
+    pandas.core.frame.DataFrame
+
+
+
+
 ```python
 print(df["color"])
 ```
+
+    0     green
+    1       red
+    2    orange
+    Name: color, dtype: object
+
 
 In the base Python example, we had a variable `info_table` which was type `list` (a built-in Python type), whereas in the pandas example, we had a variable `df` which was type `pandas.core.frame.DataFrame` (a custom type from the pandas library).
 
@@ -126,6 +145,12 @@ with open("data/apple_orchard.csv") as f:
     print("Maximum apple tree yield:", max(apple_tree_yields))
     print("Minimum apple tree yield:", min(apple_tree_yields))
 ```
+
+    Total apple tree yields: 5000
+    Average apple tree yield: 42.40762385776258
+    Maximum apple tree yield: 65.54817042071103
+    Minimum apple tree yield: 21.93121221285836
+
 
 ### JSON Files
 
@@ -191,11 +216,36 @@ with open("data/twitter_graph.json") as f:
     print_top_5(targets)
 ```
 
+    There are 99 users in this dataset
+    
+    Top 5 Sources:
+    User 232762581	| 23 Tweets
+    User 49076695	| 20 Tweets
+    User 523173553	| 19 Tweets
+    User 24883888	| 17 Tweets
+    User 53318310	| 16 Tweets
+    
+    Top 5 Targets:
+    User 169686021	| 13 Tweets
+    User 23642374	| 12 Tweets
+    User 25797630	| 11 Tweets
+    User 25626212	| 11 Tweets
+    User 21648607	| 10 Tweets
+
+
 ## What About NumPy and Matplotlib?
 
 You can continue using NumPy and Matplotlib as you see fit. For example, if you want to convert a base Python list into a NumPy array because it will help you perform some descriptive analysis task, that is not an issue. You will also need to use Matplotlib in the lessons ahead to create the required visualizations.
 
 The main library that you will *not* be using extensively is `pandas`, which will be introduced in a future section.
+
+## Appendix
+
+Once you are familiar with file input/output in Python, CSV's, and JSONs, move on to the appendix.  
+
+In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lessons.  
+
+You will also find lessons that go into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
 
 ## Summary
 
