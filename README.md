@@ -18,13 +18,7 @@ If you are short on time, be sure to make it through these items:
 - Working with Known JSON Schemas
 - Working with Known JSON Schemas - Lab
 
-### Appendix
 
-Once you are familiar with file input/output in Python, CSV's, and JSONs, move on to the appendix.  
-
-In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lessons.  
-
-You will also find lessons that go into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
 
 ## Base Python
 
@@ -244,6 +238,14 @@ with open("data/twitter_graph.json") as f:
 You can continue using NumPy and Matplotlib as you see fit. For example, if you want to convert a base Python list into a NumPy array because it will help you perform some descriptive analysis task, that is not an issue. You will also need to use Matplotlib in the lessons ahead to create the required visualizations.
 
 The main library that you will *not* be using extensively is `pandas`, which will be introduced in a future section.
+
+## Appendix
+
+Once you are familiar with file input/output in Python, CSV's, and JSONs, move on to the appendix.  
+
+In it you will find even another opportunity to practice JSON's in the **Exploring and Transforming JSON Schemas** lessons.  
+
+You will also find lessons that go into more detail about XML. XML is less important than JSON to the scope of the program, but important to know about for webscraping and general familiarity with common data structures.
 
 ## Summary
 
